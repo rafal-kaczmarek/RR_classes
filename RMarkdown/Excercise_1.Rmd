@@ -1,0 +1,68 @@
+---
+title: "RR_excercise_1"
+author: "Rafał Kaczmarek"
+date: "14 04 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+
+```{r logo, echo=FALSE, out.width = '100%'}
+knitr::include_graphics("D:\\studia\\IV rok\\Reproducible Research\\Suits_Logo.png")
+```
+
+*Suits* is an American television drama series created by Aaron Korsh, which premiered on June 23, 2011 on the USA Network. It revolves around Mike Ross (Patrick J. Adams), who begins working as a law associate for Harvey Specter (Gabriel Macht), despite never attending law school. The show focuses on Harvey and Mike managing to close cases, while maintaining Mike's secret.
+
+The series was renewed for an eighth season on January 30, 2018. In January 2019, the series was renewed for a ninth and final season which premiered on July 17, 2019. During the course of the series, 134 episodes of *Suits* aired over nine seasons, between June 23, 2011, and September 25, 2019.
+
+## Ratings
+
+The pilot episode gained a 1.6 ratings share among adults aged 18–49 and garnered an estimated 4.6 million viewers, making the episode the ninth most watched basic cable show for the week. The episode was watched 2 million in people aged 18–49 and 2.1 million in people aged 24–54, a double-digit increase over the January premiere of the network's other legal drama Fairly Legal.The second episode, which aired June 30, experienced a four-tenths ratings drop, which was attributed to the holiday weekend.However, the episode's ratings were bolstered by a high DVR viewings. The ratings rose the next week garnering 4.5 million views with a 1.3 ratings share among adults aged 18–49. The premiere of Jersey Shore, which shares the Thursday 10pm timeslot with Suits, caused a decrease in ratings, a trend that continued for the rest of the season. Together, Burn Notice and Suits were the top scripted shows in primetime television, and no other network aired scripted series that garnered over four million total viewers, one million viewers aged 25–54, or one million viewers aged 18–49. Suits was ranked third in males aged 18–49 and males aged 25–54. The series made USA Network the most watched network in the Thursday 10pm timeslot and gained more total viewers and households than any other scripted series in the timeslot. The series has the network's third best performing premiere season in viewers aged 18–49, in viewers aged 18–34, and in total viewers.
+
+
+## First season statistics
+
+|No.|Title                 |Air date         |Rating (18-49)|Viewers (millions)|
+|---|----------------------|-----------------|------------|------------------|
+|1  |"Pilot"               |June 23, 2011    |1.6     	|4.64       	     |
+|2  |"Errors and Omissions"|June 30, 2011    |1.2   	  |3.89       	     |
+|3  |"Inside Track"        |July 7, 2011     |1.3   	  |4.53       	     |
+|4  |"Dirty Little Secrets"|July 14, 2011    |1.3   	  |4.38       	     |
+|5  |"Bail Out"            |July 21, 2011    |1.5   	  |4.38       	     |
+|6  |"Tricks of the Trade" |July 28, 2011    |1.5   	  |4.44       	     |
+|7  |"Play the Man"        |August 4, 2011   |1.3   	  |4.03       	     |
+|8  |"Identity Crisis"     |August 11, 2011  |1.2   	  |3.96       	     |
+|9  |"Undefeated"          |August 18, 2011  |1.5   	  |4.46       	     |
+|10 |"Shelf Life"          |August 25, 2011  |1.2   	  |3.82       	     |	
+|11 |"Rules of the Game"   |September 1, 2011|1.2   	  |3.96       	     |
+|12 |"Dog Fight"           |September 8, 2011|1.3   	  |3.47       	     |
+
+
+## Final season statistics
+
+|No.|Title                 |Air date          |Rating (18–49)|Viewers (millions)| 
+|---|----------------------|------------------|-------------|--------------|
+|1  |"Everything's Changed"|July 17, 2019     |0.2          |1.04          |
+|2  |"Special Master"      |July 24, 2019     |0.2          |1.04          |
+|3  |"Windmills"           |July 31, 2019     |0.2          |0.94          |
+|4  |"Cairo"               |August 7, 2019    |0.2          |1.00          |
+|5  |"If the Shoe Fits"    |August 14, 2019   |0.2          |0.96          |
+|6  |"Whatever It Takes"   |August 21, 2019   |0.2          |1.05          |
+|7  |"Scenic Route"        |September 4, 2019 |0.2          |1.07          |
+|8  |"Prisoner's Dilemma"  |September 11, 2019|0.2          |0.97          |
+|9  |"Thunder Away"        |September 18, 2019|0.2          |0.96          |
+|10 |"One Last Con"        |September 25, 2019|0.2          |0.86          |
+
+## Viewership over time in the U.S.
+
+```{r plot, echo=FALSE, out.width = '100%'}
+knitr::include_graphics("D:\\studia\\IV rok\\Reproducible Research\\plot.png")
+```
+
+Plot above shows viewership over time in the U.S. There is visible decreasing trend, the first season had the highest number of viewers whereas the last had the lowest number of viewers. Most of the seasons had its peak in the middle and though in the end of season. Comparing number of viewers first episode of the first season  to number of viewers last episode of the final season, we see that last episode had only `r round(0.86/4.64,2)` of the first episode viewers. However, the lowest number of viewers was in the 8 season (0.69 million) and it is only `r round(0.69/4.64,2)` of the first season the first episode viewers.
